@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="NeuPiano.App/NeuPiano.App.csproj" />
+  <Project Path="NeuPiano.AudioUnit/NeuPiano.AudioUnit.csproj" />
+  <Project Path="NeuPiano.Engine/NeuPiano.Engine.csproj" />
+  <Project Path="NeuPiano.Tests/NeuPiano.Tests.csproj" />
+</Solution>

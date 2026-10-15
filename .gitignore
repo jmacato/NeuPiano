@@ -1,0 +1,9 @@
+bin/
+obj/
+__pycache__/
+.DS_Store
+banks/
+recordings/
+*.wav
+*.flacs
+*.pt

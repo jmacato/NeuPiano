@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AssemblyName>NeuPiano</AssemblyName>
+    <RuntimeIdentifier>osx-arm64</RuntimeIdentifier>
+    <PublishAot>true</PublishAot>
+    <NativeLib>Shared</NativeLib>
+    <IlcInstructionSet>apple-m1</IlcInstructionSet>
+    <OptimizationPreference>Speed</OptimizationPreference>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <UseSystemResourceKeys>true</UseSystemResourceKeys>
+    <ConcurrentGarbageCollection>false</ConcurrentGarbageCollection>
+    <CppCompilerAndLinker>/usr/bin/clang</CppCompilerAndLinker>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <LinkerArg Include="-Wl,-dead_strip_dylibs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NeuPiano.Engine\NeuPiano.Engine.csproj" />
+  </ItemGroup>
+
+</Project>

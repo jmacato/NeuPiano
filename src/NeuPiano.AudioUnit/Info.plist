@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleExecutable</key>
+	<string>NeuPiano</string>
+	<key>CFBundleIdentifier</key>
+	<string>local.neupiano.audiounit</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>NeuPiano</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.0</string>
+	<key>CFBundleVersion</key>
+	<string>1.0.0</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>12.0</string>
+	<key>AudioComponents</key>
+	<array>
+		<dict>
+			<key>type</key>
+			<string>aumu</string>
+			<key>subtype</key>
+			<string>Pno1</string>
+			<key>manufacturer</key>
+			<string>NeuP</string>
+			<key>name</key>
+			<string>NeuPiano: Modal Piano</string>
+			<key>description</key>
+			<string>Modal piano synth with a 50 Hz control net</string>
+			<key>version</key>
+			<integer>65536</integer>
+			<key>factoryFunction</key>
+			<string>NeuPianoFactory</string>
+			<key>tags</key>
+			<array>
+				<string>Synthesizer</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

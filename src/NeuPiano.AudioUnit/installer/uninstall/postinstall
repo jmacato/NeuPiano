@@ -1,0 +1,5 @@
+#!/bin/bash
+rm -rf /Library/Audio/Plug-Ins/Components/NeuPiano.component
+pkgutil --forget local.neupiano.audiounit >/dev/null 2>&1
+killall -9 AudioComponentRegistrar 2>/dev/null
+exit 0

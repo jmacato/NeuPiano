@@ -1,0 +1,22 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="using:NeuPiano.App"
+        x:Class="NeuPiano.App.MainWindow"
+        Title="NeuPiano" Width="1400" Height="420" MinWidth="900" MinHeight="300">
+    <DockPanel Margin="12">
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Spacing="8">
+            <Button Content="Open MIDI…" Click="OpenMidi" />
+            <Button x:Name="PlayButton" Content="Play" Click="Play" IsEnabled="False" />
+            <Button Content="Stop" Click="Stop" />
+            <CheckBox x:Name="SustainBox" Content="Sustain pedal" IsCheckedChanged="SustainChanged" />
+            <CheckBox x:Name="ControlBox" Content="Control net" IsChecked="True" IsEnabled="False" IsCheckedChanged="ControlChanged" />
+            <CheckBox x:Name="ReleaseBox" Content="Release sounds" IsChecked="True" IsEnabled="False" IsCheckedChanged="ReleaseChanged" />
+            <TextBlock Text="Volume (dB)" VerticalAlignment="Center" />
+            <Slider x:Name="VolumeSlider" Width="160" Minimum="-40" Maximum="0" ValueChanged="VolumeChanged" />
+        </StackPanel>
+        <TextBlock x:Name="Status" DockPanel.Dock="Top" Margin="0,10" />
+        <TextBlock DockPanel.Dock="Bottom" Margin="0,6,0,0" Foreground="Gray"
+                   Text="Click near the top of a key for soft notes, near the bottom for loud ones." />
+        <local:PianoKeyboard x:Name="Keyboard" />
+    </DockPanel>
+</Window>

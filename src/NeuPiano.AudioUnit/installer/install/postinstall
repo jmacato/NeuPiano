@@ -1,0 +1,3 @@
+#!/bin/bash
+killall -9 AudioComponentRegistrar 2>/dev/null
+exit 0
